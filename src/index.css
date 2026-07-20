@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme{
+    --font-alexBrush: "Alex Brush", cursive;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-cormorant: "Cormorant Garamond", serif;
+
+    --panna: #fcf8f5;
+    --pannaLight: #fcfcfc;
+    --marrone: #8B5E3C;
+    --rosaLight: #f4ede5;
+    /* --rosaMedium: #D8A89A; */
+    --rosaDark: #c57d6b;
+    --verdeSalvia: #A8B38A;
+    --oro: #C9A46A;
+    --colorTesto:#4A3A32;
+}
