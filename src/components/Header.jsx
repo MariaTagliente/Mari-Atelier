@@ -1,6 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router";
 import { GoHeart } from "react-icons/go";
+import borsa from "../assets/borsa-header.jpg";
 
 export default function Header() {
   return (
@@ -10,7 +11,7 @@ export default function Header() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-14">
 
           <div className="text-center md:text-left">
-            <h1 className="text-3xl md:text-4xl font-cormorant font-semibold">
+            <h1 className="text-3xl md:text-4xl font-cormorant font-semibold text-(--colorTesto)">
               Ogni creazione
             </h1>
 
@@ -19,13 +20,13 @@ export default function Header() {
             </h2>
 
             <div className="flex items-center justify-center md:justify-start gap-4 my-4">
-              <div className="h-px w-20 bg-(--rosaDark)"/>
+              <div className="h-px w-20 md:w-30 bg-(--rosaDark)"/>
               <GoHeart size={25} className="text-(--rosaDark)"/>
-              <div className="h-px w-20 bg-(--rosaDark)" />
+              <div className="h-px w-20 md:w-30 bg-(--rosaDark)"/>
             </div>
 
-            <p className="text-[17px] md:text-lg leading-8 text-(--colorTesto) max-w-md md:max-w-4/5">
-              Borse, accessori e amigurumi realizzati all'uncinetto 
+            <p className="text-[17px] md:text-lg leading-8 text-(--colorTesto)/80 max-w-md md:max-w-lg">
+              Borse, bikini, amigurumi e accessori realizzati all'uncinetto 
               con cura, passione e attenzione ai dettagli.
             </p>
 
@@ -35,7 +36,7 @@ export default function Header() {
                 Scopri la collezione
               </Link>
 
-              <Link className="flex items-center gap-3 text-(--colorTesto) hover:text-(--marrone)">
+              <Link className="flex items-center gap-3 text-(--colorTesto)/80 hover:text-(--marrone)">
                 Scopri di più su di me
                 <FaArrowRightLong size={18}/>
               </Link>
@@ -49,7 +50,7 @@ export default function Header() {
 
             <div className="absolute inset-0 bg-white blur-3xl opacity-60 rounded-full"></div>
 
-            <img src="" alt="Borsa Mari Atelier" className="relative w-full max-w-xl mx-auto drop-shadow-2xl"/>
+            <img src={borsa} alt="Borsa Mari Atelier" className="relative w-full max-w-lg mx-auto drop-shadow-2xl"/>
 
           </div>
 

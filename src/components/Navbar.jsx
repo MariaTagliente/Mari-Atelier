@@ -23,10 +23,10 @@ export default function Navbar(){
                         <FiTruck size={15}/>
                     </span>
 
-                    <span className="flex items-center gap-2">
+                    <a href="https://www.instagram.com/mariatelier.handmade/?hl=it" target="_blank" className="flex items-center gap-2 hover:opacity-70 transition">
                         Seguimi su Instagram
                         <FaInstagram size={15}/>
-                    </span>
+                    </a>
 
                 </div>
             </div>
@@ -67,7 +67,7 @@ export default function Navbar(){
                         <div className="hidden lg:flex flex-col leading-none">
                             <h1 className="font-alexBrush text-4xl md:text-5xl">Mari Atelier</h1>
                             
-                            <div className="flex items-center">
+                            <div className="flex items-center justify-center">
                                 <span className="flex-1 h-px bg-(--marrone)"></span>
                                 <h2 className="text-center font-cormorant font-bold text-[8px] md:text-[11px] tracking-[4px] ml-1.5 mr-1.5">HANDMADE CREATIONS</h2>
                                 <span className="flex-1 h-px bg-(--marrone)"></span>
