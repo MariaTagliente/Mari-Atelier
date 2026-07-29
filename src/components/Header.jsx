@@ -33,7 +33,7 @@ export default function Header() {
             <div className="flex flex-col justify-center items-center md:flex-row md:justify-start gap-5 md:gap-8 mt-8">
 
               <Link className="bg-(--rosaDark) uppercase hover:opacity-90 transition text-white px-8 py-4 rounded-md">
-                Scopri la collezione
+                Guarda la collezione
               </Link>
 
               <Link className="flex items-center gap-3 text-(--colorTesto)/80 hover:text-(--marrone)">
@@ -48,7 +48,7 @@ export default function Header() {
           {/* Immagine */}
           <div className="relative">
 
-            <div className="absolute inset-0 bg-white blur-3xl opacity-60 rounded-full"></div>
+            <div className="absolute inset-0 bg-(--rosaLight) blur-3xl opacity-70 rounded-full"></div>
 
             <img src={borsa} alt="Borsa Mari Atelier" className="relative w-full max-w-lg mx-auto drop-shadow-2xl"/>
 

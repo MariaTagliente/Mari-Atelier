@@ -55,8 +55,8 @@ export default function Homepage(){
 
                 <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
                     {categories.map((category)=>(
-                        <div key={category.id} className="bg-(--rosaLight) rounded-xl">
-                            <img src={category.image} alt="categorie" className="h-60 w-full object-cover rounded-t-xl"/>
+                        <div key={category.id} className="bg-(--rosaLight) rounded-xl overflow-hidden group hover:-translate-y-2 transition duration-300">
+                            <img src={category.image} alt="categorie" className="h-60 w-full object-cover rounded-t-xl group-hover:scale-105 transition duration-500"/>
                             
                             <div className="relative p-8">
                                 <div className="absolute -top-7 left-1/2 -translate-x-1/2">
@@ -66,7 +66,7 @@ export default function Homepage(){
                                 </div>
                                 
                                 <div className="mt-7 flex flex-col items-center gap-2">
-                                    <h3 className="font-cormorant uppercase font-bold text-2xl text-center text-(--colorTesto)">
+                                    <h3 className="font-cormorant uppercase font-bold text-xl text-center text-(--colorTesto)">
                                         {category.title}
                                     </h3>
                                     
