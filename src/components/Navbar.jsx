@@ -52,7 +52,7 @@ export default function Navbar(){
 
 
             {/* NAVBAR */}
-            <div className="w-full text-(--marrone) p-2 bg-(--pannaLight) animate-fadeUp">
+            <div className="relative z-50 w-full text-(--marrone) p-2 bg-(--pannaLight) animate-fadeUp">
 
                 <div className="container mx-auto px-6 navbar">
 
@@ -217,9 +217,9 @@ export default function Navbar(){
                            ${page === "shop" ? "translate-x-0" : "translate-x-full"}`}>
                             <div className="bg-(--rosaDark) text-(--pannaLight) px-8 py-3">
                                 
-                                <button onClick={() => setPage("menu")} className="flex items-center gap-3">
-                                    <FaArrowLeftLong />
-                                    Shop
+                                <button onClick={()=>setPage("menu")} className="flex items-center gap-3">
+                                    <FaArrowLeftLong/>
+                                    <span className="text-sm">Shop</span>
                                 </button>
                             </div>
                             
