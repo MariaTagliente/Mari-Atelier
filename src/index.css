@@ -11,11 +11,15 @@
     --pannaLight: #fcfcfc;
     --marrone: #8B5E3C;
     --rosaLight: #f4ede5;
-    /* --rosaMedium: #D8A89A; */
     --rosaDark: #c57d6b;
-    --verdeSalvia: #A8B38A;
+    --verdeSalviaLight: #E5ECE1;
+    --verdeSalviaDark: #D8E3D2;
     --oro: #C9A46A;
     --colorTesto:#4A3A32;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* ANIMAZIONE TOP BAR */

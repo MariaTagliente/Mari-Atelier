@@ -151,11 +151,11 @@ export default function Navbar(){
                             </li>
 
                             <li>
-                                <Link className="nav-link">Chi sono</Link>
+                                <a href="#chi-sono" className="nav-link">Chi sono</a>
                             </li>
 
                             <li>
-                                <Link className="nav-link">Contatti</Link>
+                                <a href="#contatti" className="nav-link">Contatti</a>
                             </li>
                         </ul>
                     </div>
@@ -208,8 +208,14 @@ export default function Navbar(){
                                 </li>
                                 
                                 <li>Personalizzazioni</li>
-                                <li>Chi sono</li>
-                                <li>Contatti</li>                           
+
+                                <li>
+                                    <a href="#chi-sono" className="nav-link">Chi sono</a>
+                                </li>
+
+                                <li>
+                                    <a href="#contatti" className="nav-link">Contatti</a>
+                                </li>                           
                             </ul>
                         </div>
                         

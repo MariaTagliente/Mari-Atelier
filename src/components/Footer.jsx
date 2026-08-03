@@ -4,17 +4,17 @@ import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function Footer(){
     return(
-        <footer className="mt-20 border-(--verdeSalvia)/40 border-t-[1px] bg-(--verdeSalvia)/10 py-6">
+        <footer className="mt-20 border-(--verdeSalviaDark) border-t-[1px] bg-(--verdeSalviaLight) py-6">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-0">
                 <div>
                     <img src={logo} alt="logo footer" className="w-45 md:w-50 mx-auto md:mx-0"/>
 
-                    <div className="w-45 md:w-50 flex justify-center gap-4 mt-4 border-(--verdeSalvia)/40 border-t-[1px] mx-auto md:mx-0">
+                    <div className="w-45 md:w-50 flex justify-center gap-4 mt-4 border-(--verdeSalviaDark) border-t-[1px] mx-auto md:mx-0">
                         <a href="https://www.instagram.com/mariatelier.handmade/?hl=it" target="_blank" className="mt-2 text-(--rosaDark) hover:scale-110 transition duration-300">
                            <FaInstagram size={20}/>
                         </a>
                         
-                        <a href="#" className="mt-2 text-(--verdeSalvia) hover:scale-110 transition duration-300">
+                        <a href="#" className="mt-2 text-(--verdeSalviaDark) hover:scale-110 transition duration-300">
                            <FaTiktok size={20}/>
                         </a>
                     </div>

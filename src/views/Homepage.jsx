@@ -1,88 +1,52 @@
 import Header from "../components/Header";
-import { PiGiftLight } from "react-icons/pi";
-import { Link } from "react-router";
-import { FaArrowRightLong } from "react-icons/fa6";
-import borse from "../assets/categories/borse.jpg";
-import amigurumi from "../assets/categories/doll.jpg";
-import bikiniIcon from "../assets/icons/bikini.svg";
-import handBagIcon from "../assets/icons/handbag.svg";
-import ribbonIcon from "../assets/icons/ribbon2.svg";
-import teddyIcon from "../assets/icons/teddy.svg";
+import Categories from "../components/sections/Categories";
+import { categories } from "../data/categories";
+import Section from "../components/HomepageComponents/Section";
+import FeaturedProducts from "../components/sections/FeaturedProducts";
+import { products } from "../data/products";
+import HandmadeValues from "../components/sections/HandmadeValues";
+import { values } from "../data/values";
+import AboutMe from "../components/sections/AboutMe";
+import { aboutMe } from "../data/aboutMe";
+import Contacts from "../components/sections/Contacts";
 
 export default function Homepage(){
-
-    const categories = [
-        
-        {
-            id: 1,
-            title: "Borse",
-            image: borse,
-            description: "Borse uniche, intrecciate con passione",
-            icon: handBagIcon
-        },
-
-        {
-            id: 2,
-            title: "Bikini",
-            image: borse,
-            description: "Costumi handmade all'uncinetto",
-            icon: bikiniIcon
-        },
-
-        {
-            id: 3,
-            title: "Amigurumi",
-            image: amigurumi,
-            description: "Piccole creazioni che fanno sorridere",
-            icon: teddyIcon
-        },
-
-        {
-            id: 4,
-            title: "Accessori",
-            image: borse,
-            description: "Dettagli che completano ogni stile",
-            icon: ribbonIcon
-        }
-    ];
 
     return(
         <>
           <Header/>
-          <main className="max-w-7xl mx-auto px-6">
-            <section className="text-(--colorTesto)">
-                <h1 className="mt-15 uppercase text-2xl font-cormorant font-bold text-center">scegli la tua categoria</h1>
 
-                <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
-                    {categories.map((category)=>(
-                        <div key={category.id} className="bg-(--rosaLight) rounded-xl overflow-hidden group hover:-translate-y-2 transition duration-300">
-                            <img src={category.image} alt="categorie" className="h-60 w-full object-cover rounded-t-xl group-hover:scale-105 transition duration-500"/>
-                            
-                            <div className="relative p-8">
-                                <div className="absolute -top-7 left-1/2 -translate-x-1/2">
-                                  <div className="w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center text-3xl text-(--rosaDark)">
-                                    <img src={category.icon} alt={category.title} className="w-9 h-9"/>
-                                  </div>
-                                </div>
-                                
-                                <div className="mt-7 flex flex-col items-center gap-2">
-                                    <h3 className="font-cormorant uppercase font-bold text-xl text-center text-(--colorTesto)">
-                                        {category.title}
-                                    </h3>
-                                    
-                                    <p className="max-w-50 text-center text-(--colorTesto)/80">
-                                        {category.description}
-                                    </p>
-                                    
-                                    {/* <span className="flex justify-center">
-                                        <FaArrowRightLong size={20} className="hover:text-(--rosaDark) group-hover:translate-x-2 transition"/>
-                                    </span> */}
-                                </div>
-                            </div>                           
-                        </div>
-                    ))}
+          <main>
+
+            {/* CATEGORIE */}
+            <div className="max-w-7xl mx-auto px-6 pt-16">
+                <Section id="collezioni" title="Scopri le collezioni">
+                    <Categories data={categories}/>
+                </Section>
+            </div>
+            
+            {/* CREAZIONI IN EVIDENZA */}
+            <section className="relative w-full bg-(--verdeSalviaLight) py-15 mt-12">
+                <div className="max-w-7xl mx-auto px-6">
+                    <Section title="Creazioni in evidenza" badge="Selezione handamde">
+                        <FeaturedProducts data={products}/>
+                    </Section>
                 </div>
             </section>
+
+            {/* VALORI */}
+            <section className="w-full bg-(--pannaLight)">
+                <HandmadeValues data={values}/>
+            </section>
+
+            <section id="chi-sono" className="scroll-mt-24">
+                <AboutMe data={aboutMe}/>
+            </section>
+
+            <section id="contatti" className="scroll-mt-24">
+                <Contacts/>
+            </section>
+            
           </main>
         </>
     )
