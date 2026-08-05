@@ -19,17 +19,17 @@ export default function AboutMe({data}){
                     {data.badge}
                 </span>
 
-                <h2 className="mt-5 font-cormorant text-3xl md:text-4xl font-bold text-(--marrone)">
+                <h2 className="mt-5 font-cormorant text-3xl md:text-4xl font-bold text-(--colorTesto)">
                     {data.title}
                 </h2>
 
                 <div className="flex items-center gap-3 mt-4">
-                    <div className="h-px w-14 bg-(--rosaDark)"/>
+                    <div className="h-px w-18 bg-(--rosaDark)"/>
                     <GoHeart size={16} className="text-(--rosaDark)"/>
-                    <div className="h-px w-14 bg-(--rosaDark)"/>
+                    <div className="h-px w-18 bg-(--rosaDark)"/>
                 </div>
 
-                <p className="mt-5 text-sm md:text-base leading-7 text-(--marrone)/75 whitespace-pre-line">
+                <p className="mt-5 text-sm md:text-base leading-7 text-(--colorTesto)/70 whitespace-pre-line">
                     {data.description}
                 </p>
 

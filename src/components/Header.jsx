@@ -37,7 +37,7 @@ export default function Header() {
               <div className="h-px w-20 md:w-35 bg-(--rosaDark)"/>
             </div>
 
-            <p className="text-[17px] md:text-lg leading-7 md:leading-8 text-(--colorTesto)/80 max-w-2xl mx-auto md:mx-0 md:max-w-2xl">
+            <p className="text-[17px] md:text-lg leading-7 md:leading-8 text-(--colorTesto)/70 max-w-2xl mx-auto md:mx-0 md:max-w-2xl">
               Ogni creazione nasce dall'incontro tra filati, creatività e passione. 
               Pezzi unici realizzati interamente a mano, per accompagnare i tuoi momenti più speciali.
             </p>

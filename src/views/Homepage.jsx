@@ -9,6 +9,7 @@ import { values } from "../data/values";
 import AboutMe from "../components/sections/AboutMe";
 import { aboutMe } from "../data/aboutMe";
 import Contacts from "../components/sections/Contacts";
+import { contacts, socialLinks } from "../data/contacts";
 
 export default function Homepage(){
 
@@ -44,7 +45,7 @@ export default function Homepage(){
             </section>
 
             <section id="contatti" className="scroll-mt-24">
-                <Contacts/>
+                <Contacts data={contacts} socialLinks={socialLinks}/>
             </section>
             
           </main>
