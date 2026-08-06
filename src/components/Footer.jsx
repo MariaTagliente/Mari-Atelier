@@ -1,60 +1,129 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import logo from "../assets/logo-instagram.png";
-import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { Link } from "react-router";
+import { FaInstagram } from "react-icons/fa";
+import { FaArrowUpLong } from "react-icons/fa6";
 
-export default function Footer(){
-    return(
-        <footer className="mt-20 border-(--verdeSalviaDark) border-t-[1px] bg-(--verdeSalviaLight) py-6">
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-0">
-                <div>
-                    <img src={logo} alt="logo footer" className="w-45 md:w-50 mx-auto md:mx-0"/>
+export default function Footer() {
+    return (
+        
+        <footer className="bg-(--pannaLight)">
 
-                    <div className="w-45 md:w-50 flex justify-center gap-4 mt-4 border-(--verdeSalviaDark) border-t-[1px] mx-auto md:mx-0">
-                        <a href="https://www.instagram.com/mariatelier.handmade/?hl=it" target="_blank" className="mt-2 text-(--rosaDark) hover:scale-110 transition duration-300">
-                           <FaInstagram size={20}/>
-                        </a>
-                        
-                        <a href="#" className="mt-2 text-(--verdeSalviaDark) hover:scale-110 transition duration-300">
-                           <FaTiktok size={20}/>
-                        </a>
+            <div className="max-w-7xl mx-auto px-6 py-14">
+
+                <div className="grid grid-cols-1 md:grid-cols-[1.8fr_1fr_1fr] gap-12 md:gap-24">
+
+                    {/* LOGO */}
+                    <div className="flex flex-col items-center text-center md:items-start md:text-left">
+
+                        <Link to="/" className="inline-block transition-opacity duration-300 hover:opacity-80">
+                            <div className="flex flex-col leading-none">
+
+                                <h2 className="font-alexBrush text-5xl text-(--marrone)">
+                                    Mari Atelier
+                                </h2>
+
+                                <div className="flex items-center">
+
+                                    <span className="flex-1 h-px bg-(--marrone)"></span>
+
+                                    <span className="mx-2 font-cormorant font-bold text-[11px] tracking-[4px] text-(--marrone)">
+                                        HANDMADE CREATIONS
+                                    </span>
+
+                                    <span className="flex-1 h-px bg-(--marrone)"></span>
+
+                                </div>
+
+                            </div>
+                        </Link>
+
+                        <p className="mt-6 max-w-lg leading-7 text-(--colorTesto)/70">
+                            Piccole creazioni nate dall'incontro tra fili, idee e passione, 
+                            realizzate con cura per raccontare la tua unicità.
+                        </p>
+
                     </div>
-                </div>
-                
-                <nav className="flex flex-col items-center md:items-start gap-2 text-sm">
-                    <h6 className="text-(--colorTesto) uppercase font-medium mb-2">Link utili</h6>
-                    <a className="link link-hover text-(--colorTesto)/70">Shop</a>
-                    <a className="link link-hover text-(--colorTesto)/70">Personalizzazioni</a>
-                    <a className="link link-hover text-(--colorTesto)/70">Chi sono</a>
-                    <a className="link link-hover text-(--colorTesto)/70">Contatti</a>
-                </nav>
-                
-                <nav className="flex flex-col items-center md:items-start gap-2 text-sm">
-                    <h6 className="text-(--colorTesto) uppercase font-medium mb-2">Info</h6>
-                    <a className="link link-hover text-(--colorTesto)/70">Spedizioni</a>
-                    <a className="link link-hover text-(--colorTesto)/70">Resi e rimborsi</a>
-                    <a className="link link-hover text-(--colorTesto)/70">Termini e condizioni</a>
-                    <a className="link link-hover text-(--colorTesto)/70">Privacy Policy</a>
-                </nav>
-                
-                <form className="flex flex-col items-center md:items-start gap-2 text-sm">
-                    <h6 className="text-(--colorTesto) uppercase font-medium mb-2">Newsletter</h6>
-                    <fieldset className="w-full max-w-60 text-center md:text-left">
-                        <label className="text-(--colorTesto)/70">Resta aggiornata su novità, promozioni e anteprime esclusive.</label>
+
+                    {/* ESPLORA */}
+                    <nav className="flex flex-col items-center text-center md:items-start md:text-left md:border-l md:border-(--rosaDark)/10 md:pl-10">
+
+                        <h3 className="font-cormorant text-2xl font-bold text-(--marrone)">
+                            Esplora
+                        </h3>
+
+                        <ul className="mt-5 space-y-3 text-(--colorTesto)/70 font-medium">
+
+                            <li>
+                                <Link to="/" className="transition-colors hover:text-(--rosaDark)">
+                                    Home
+                                </Link>
+                            </li>
+
+                            <li>
+                                <a href="#collezioni" className="transition-colors hover:text-(--rosaDark)">
+                                    Collezioni
+                                </a>
+                            </li>
+
+                            <li>
+                                <Link to="/personalizzazioni" className="transition-colors hover:text-(--rosaDark)">
+                                    Personalizzazioni
+                                </Link>
+                            </li>
+
+                            <li>
+                                <a href="#chi-sono" className="transition-colors hover:text-(--rosaDark)">
+                                    Chi sono
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    {/* INFO */}
+                    <div className="flex flex-col items-center text-center md:items-start md:text-left md:border-l md:border-(--rosaDark)/10 md:pl-10">
+
+                        <h3 className="font-cormorant text-2xl font-bold text-(--marrone)">
+                            Info
+                        </h3>
+
+                        <ul className="mt-5 space-y-3 text-(--colorTesto)/70 font-medium">
+
+                            <li>
+                                <a href="#contatti" className="transition-colors hover:text-(--rosaDark)">
+                                    Contatti
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="" className="transition-colors hover:text-(--rosaDark)">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="" className="transition-colors hover:text-(--rosaDark)">
+                                    Cookie Policy
+                                </a>
+                            </li>
+
+                        </ul>
                         
-                        <div className="join mt-4 md:mt-6 justify-center md:justify-start">
-                            <input type="text" placeholder="La tua email" className="input outline-none focus:border-(--rosaDark) join-item text-sm"/>
-                            <button className="btn border border-(--rosaDark) bg-(--rosaDark) hover:opacity-90 transition join-item text-white"><FaArrowRightLong size={18}/></button>
-                        </div>
-                    </fieldset>
-                </form>
+                    </div>
 
-                <div className="w-full md:col-span-full text-center text-(--colorTesto)/70 text-sm">
-                    <p>© {new Date().getFullYear()} Mari Atelier - Handmade Creations. All rights reserved.</p>
                 </div>
-            </div>
-            
 
-            
+                {/* COPYRIGHT */}
+
+                <div className="mt-10 pt-6 border-t border-(--rosaDark)/10 text-center text-sm text-(--colorTesto)/60">
+
+                    © {new Date().getFullYear()} Mari Atelier · Handmade Creations
+
+                </div>
+
+            </div>
+
         </footer>
-    )
+    );
 }

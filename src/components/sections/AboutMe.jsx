@@ -9,7 +9,7 @@ export default function AboutMe({data}){
         <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
             <motion.div initial={{opacity:0, x:-30}} whileInView={{opacity:1, x:0}} viewport={{once:true, amount:0.3}} transition={{duration:0.6, ease:"easeOut"}} className="relative">
-                <div className="absolute -z-10 top-8 left-8 w-full h-full rounded-[40px] bg-(--verdeSalviaLight)"/>
+                <div className="absolute -z-10 top-4 left-4 md:top-8 md:left-8 w-full h-full rounded-[40px] bg-(--verdeSalviaLight)"/>
                 <img src={data.image} alt="Maria Mari Atelier" className="relative w-full rounded-[40px] shadow-xl"/>
             </motion.div>
 

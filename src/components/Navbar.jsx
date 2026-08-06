@@ -115,7 +115,7 @@ export default function Navbar(){
 
                             <li>
                                 <details>
-                                    <summary className="bg-transparent transition-colors duration-300 hover:text-(--rosaDark)">Shop</summary>
+                                    <summary className="bg-transparent transition-colors duration-300 hover:text-(--rosaDark)">Collezioni</summary>
                                     <ul className="p-2 w-50 bg-(--rosaLight)">
                                         <li>
                                             <a className="bg-transparent hover:text-(--rosaDark)">
@@ -199,10 +199,10 @@ export default function Navbar(){
 
                                 <li>
                                     <button onClick={()=>{
-                                        setPage("shop");
+                                        setPage("collezioni");
                                         }} className="w-full flex justify-between items-center">
                                             
-                                            <span>Shop</span>
+                                            <span>Collezioni</span>
                                             <FaArrowRightLong size={18}/>
                                     </button>
                                 </li>
@@ -220,12 +220,12 @@ export default function Navbar(){
                         </div>
                         
                         <div className={`absolute inset-0 bg-(--rosaLight) transition-transform duration-300 ease-in-out
-                           ${page === "shop" ? "translate-x-0" : "translate-x-full"}`}>
+                           ${page === "collezioni" ? "translate-x-0" : "translate-x-full"}`}>
                             <div className="bg-(--rosaDark) text-(--pannaLight) px-8 py-3">
                                 
                                 <button onClick={()=>setPage("menu")} className="flex items-center gap-3">
                                     <FaArrowLeftLong/>
-                                    <span className="text-sm">Shop</span>
+                                    <span className="text-sm">Collezioni</span>
                                 </button>
                             </div>
                             

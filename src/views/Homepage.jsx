@@ -10,6 +10,9 @@ import AboutMe from "../components/sections/AboutMe";
 import { aboutMe } from "../data/aboutMe";
 import Contacts from "../components/sections/Contacts";
 import { contacts, socialLinks } from "../data/contacts";
+import { FaArrowUpLong } from "react-icons/fa6";
+import { motion } from "motion/react";
+import ScrollTopButton from "../components/ScrollTopButton";
 
 export default function Homepage(){
 
@@ -40,15 +43,19 @@ export default function Homepage(){
                 <HandmadeValues data={values}/>
             </section>
 
+            {/* CHI SONO */}
             <section id="chi-sono" className="scroll-mt-24">
                 <AboutMe data={aboutMe}/>
             </section>
 
+            {/* CONTATTI */}
             <section id="contatti" className="scroll-mt-24">
                 <Contacts data={contacts} socialLinks={socialLinks}/>
             </section>
             
           </main>
+
+          <ScrollTopButton/>
         </>
     )
 }
