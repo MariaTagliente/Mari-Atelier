@@ -13,7 +13,7 @@ export default function AboutMe({data}){
                 <img src={data.image} alt="Maria Mari Atelier" className="relative w-full rounded-[40px] shadow-xl"/>
             </motion.div>
 
-            <motion.div initial={{opacity:0, x:30}} whileInView={{opacity:1, x:0}} viewport={{once:true, amount:0.3}} transition={{duration:0.6, ease:"easeOut"}} className="bg-(--rosaLight)/70 border border-(--rosaDark)/10 rounded-[40px] p-8 md:p-10">
+            <motion.div initial={{opacity:0, x:30}} whileInView={{opacity:1, x:0}} viewport={{once:true, amount:0.3}} transition={{duration:0.6, ease:"easeOut"}} className="bg-(--rosaLight)/70 border border-(--rosaDark)/10 rounded-[40px] p-8 md:p-10 shadow-sm">
 
                 <span className="inline-flex items-center gap-2 bg-white/70 shadow-sm text-(--rosaDark) px-4 py-2 rounded-full text-sm font-medium">
                     {data.badge}

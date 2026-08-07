@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "../components/Layout";
 import Homepage from "../views/Homepage";
+import ProductDetail from "../views/ProductDetail";
 
 const router = createBrowserRouter([
     {
@@ -9,7 +10,12 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                Component: Homepage
+                Component: Homepage,              
+            },
+
+            {
+                path: "detail/:id",
+                Component: ProductDetail,
             }
         ]
     }

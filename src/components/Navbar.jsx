@@ -52,7 +52,7 @@ export default function Navbar(){
 
 
             {/* NAVBAR */}
-            <div className="relative z-50 w-full text-(--marrone) p-2 bg-(--pannaLight) animate-fadeUp">
+            <div className="relative z-50 w-full text-(--marrone) p-2 bg-(--pannaLight) border-b border-(--rosaDark)/10 animate-fadeUp">
 
                 <div className="container mx-auto px-6 navbar">
 

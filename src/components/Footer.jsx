@@ -44,7 +44,7 @@ export default function Footer() {
                     </div>
 
                     {/* ESPLORA */}
-                    <nav className="flex flex-col items-center text-center md:items-start md:text-left md:border-l md:border-(--rosaDark)/10 md:pl-10">
+                    <nav className="flex flex-col items-center text-center md:items-start md:text-left md:border-l md:border-(--rosaDark)/15 md:pl-10">
 
                         <h3 className="font-cormorant text-2xl font-bold text-(--marrone)">
                             Esplora
@@ -81,7 +81,7 @@ export default function Footer() {
                     </nav>
 
                     {/* INFO */}
-                    <div className="flex flex-col items-center text-center md:items-start md:text-left md:border-l md:border-(--rosaDark)/10 md:pl-10">
+                    <div className="flex flex-col items-center text-center md:items-start md:text-left md:border-l md:border-(--rosaDark)/15 md:pl-10">
 
                         <h3 className="font-cormorant text-2xl font-bold text-(--marrone)">
                             Info

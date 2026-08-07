@@ -1,3 +1,5 @@
+import MariAtelier from "../assets/chi-sono.png";
+
 export const aboutMe = {
     badge: "La mia storia",
     title: "Dove la creatività prende forma tra fili e dettagli.",
@@ -11,5 +13,7 @@ export const aboutMe = {
         Mari Atelier è un progetto nato da poco: ho iniziato a raccontare il mio lavoro attraverso Instagram e questo primo sito web, con il desiderio di condividere la mia passione e il mondo delle mie creazioni.
 
         La collezione cresce passo dopo passo e ogni creazione nasce con entusiasmo, cura e attenzione ai dettagli. Se hai un'idea speciale, sarò felice di realizzarla insieme a te.
-    `
+    `,
+
+    image: MariAtelier
 };

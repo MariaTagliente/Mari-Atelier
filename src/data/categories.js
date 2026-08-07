@@ -1,6 +1,6 @@
 import bikiniIcon from "../assets/icons/bikini.svg";
 import handBagIcon from "../assets/icons/handbag.svg";
-import ribbonIcon from "../assets/icons/ribbon2.svg";
+import ribbonIcon from "../assets/icons/ribbon.svg";
 import teddyIcon from "../assets/icons/teddy.svg";
 
 export const categories = [
